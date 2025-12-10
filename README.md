@@ -20,9 +20,9 @@ The Backend exposes a secure /optimize API endpoint, while the Frontend interact
 
 # 🌐 **Live Project URL**
 
-(Upload your frontend here — GitHub Pages / Netlify / Amplify / S3)
+(Frontend S3 Static hosting)
 
-[https://your-live-url-here.com](http://image-compressor-hosting.s3-website.ap-south-1.amazonaws.com)
+[https://image-optmizer](http://image-compressor-hosting.s3-website.ap-south-1.amazonaws.com)
 
 ---
 
@@ -187,3 +187,4 @@ const apiUrl = "https://YOUR_API_ID.execute-api.ap-south-1.amazonaws.com/prod/op
 **Mohammed Rasool Shaik**
 
 Cloud Engineer | AWS | DevOps | Backend Devlopment
+

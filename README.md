@@ -18,11 +18,7 @@ The Backend exposes a secure /optimize API endpoint, while the Frontend interact
 
 ---
 
-# 🌐 **Live Project URL**
-
-(Frontend S3 Static hosting)
-
-[https://image-optmizer](http://image-compressor-hosting.s3-website.ap-south-1.amazonaws.com)
+# 🌐 **Live Project URL:** [S3 Hosting](http://image-compressor-hosting.s3-website.ap-south-1.amazonaws.com)
 
 ---
 
@@ -187,4 +183,5 @@ const apiUrl = "https://YOUR_API_ID.execute-api.ap-south-1.amazonaws.com/prod/op
 **Mohammed Rasool Shaik**
 
 Cloud Engineer | AWS | DevOps | Backend Devlopment
+
 

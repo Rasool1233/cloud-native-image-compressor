@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Image Processing Pipeline</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Placeholder favicon -->
+    <link rel="icon" href="https://fontawesome.com/icons/down-left-and-up-right-to-center?f=classic&s=solid" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1><i class="fas fa-cloud-upload-alt"></i> AWS Image Processing Pipeline</h1>
+            <p class="subtitle">Upload high-resolution images and get optimized versions for web use</p>
+        </header>
+
+        <main>
+
+            <!-- ========================== UPLOAD SECTION ========================== -->
+            <section class="upload-section">
+
+                <!-- CLICKABLE DROP AREA -->
+                <div class="upload-area" id="dropArea">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <h3>Drag & Drop Images Here</h3>
+                    <p class="upload-hint">or click to browse (JPG, PNG, WebP, GIF)</p>
+                    <p class="file-size-note">Max file size: 10MB per image</p>
+                </div>
+
+                <!-- HIDDEN FILE INPUT TRIGGERED ONLY BY JS -->
+                <input type="file" id="fileInput" accept="image/*" multiple style="display:none;">
+
+                <!-- PROCESSING OPTIONS -->
+                <div class="options-section">
+                    <h3><i class="fas fa-sliders-h"></i> Processing Options</h3>
+
+                    <div class="option-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="resize1080p" checked>
+                            <span class="checkmark"></span>
+                            Generate 1080p version (1920×1080)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="resize720p" checked>
+                            <span class="checkmark"></span>
+                            Generate 720p version (1280×720)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="resize480p" checked>
+                            <span class="checkmark"></span>
+                            Generate 480p version (854×480)
+                        </label>
+                    </div>
+
+                    <div class="option-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="compressImage" checked>
+                            <span class="checkmark"></span>
+                            Compress images (optimize file size)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="convertWebP">
+                            <span class="checkmark"></span>
+                            Convert to WebP format
+                        </label>
+                    </div>
+
+                    <button id="processButton" class="process-btn" disabled>
+                        <i class="fas fa-cogs"></i> Process Images
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- ========================== PROGRESS SECTION ========================== -->
+            <section class="progress-section hidden" id="progressSection">
+                <h3><i class="fas fa-spinner fa-spin"></i> Processing Images</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <span class="progress-text" id="progressText">0%</span>
+                </div>
+                <p class="progress-status" id="progressStatus">Uploading images to S3...</p>
+            </section>
+
+            <!-- ========================== RESULTS SECTION ========================== -->
+            <section class="results-section hidden" id="resultsSection">
+                <h3><i class="fas fa-check-circle"></i> Processing Complete</h3>
+                <div class="results-container" id="resultsContainer"></div>
+
+                <button id="processMoreBtn" class="secondary-btn">
+                    <i class="fas fa-plus"></i> Process More Images
+                </button>
+            </section>
+
+            <!-- ========================== PREVIEW SECTION ========================== -->
+            <section class="preview-section hidden" id="previewSection">
+                <h3><i class="fas fa-images"></i> Selected Images</h3>
+                <div class="preview-container" id="previewContainer"></div>
+                <p class="preview-count" id="previewCount">0 images selected</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>AWS Image Optimization Pipeline | Built with S3, Lambda, and API Gateway</p>
+            <p class="footer-links">
+                <a href="#" class="footer-link"><i class="fas fa-info-circle"></i> Documentation</a>
+                <a href="#" class="footer-link"><i class="fas fa-code"></i> API Reference</a>
+                <a href="#" class="footer-link"><i class="fas fa-envelope"></i> Contact</a>
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -23,13 +23,15 @@ The Backend exposes a secure /optimize API endpoint, while the Frontend interact
 ---
 
 # 🖼️ **Application Screenshots (LIVE Demo)**
-📤 Upload Image
 
-⚙️ Image Compression in Progress
+## **📤 User Interface**
+![Upload Screen](Screenshots/User_Interface.png)
 
-📥 Download Optimized Image
+## **⚙️ Image Compression in Progress**
+![Optimizing](Screenshots/Optimizing.png)
 
-(Replace with actual screenshot paths.)
+## **📥 Download Optimized Image**
+![Optimized](Screenshots/Optmized_image.png)
 
 ---
 
@@ -183,5 +185,6 @@ const apiUrl = "https://YOUR_API_ID.execute-api.ap-south-1.amazonaws.com/prod/op
 **Mohammed Rasool Shaik**
 
 Cloud Engineer | AWS | DevOps | Backend Devlopment
+
 
 

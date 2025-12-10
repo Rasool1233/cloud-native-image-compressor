@@ -10,7 +10,7 @@ const CONFIG = {
     INPUT_BUCKET: 'input-bucket-image-compressor',
     OUTPUT_BUCKET: 'output-bucket-image-compressor',
     S3_REGION: 'ap-south-1',
-    OUTPUT_BASE_URL: 'https://output-bucket-image-compressor.s3.ap-south-1.amazonaws.com',
+    OUTPUT_BASE_URL: 'https://output-bucket-image-compressor.s3.ap-south-1.amazonaws.com', 
     OUTPUT_PREFIX: 'processed', // root prefix for optimized files
 
     // File Limits

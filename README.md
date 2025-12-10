@@ -184,7 +184,8 @@ const apiUrl = "https://YOUR_API_ID.execute-api.ap-south-1.amazonaws.com/prod/op
 
 **Mohammed Rasool Shaik**
 
-Cloud Engineer | AWS | DevOps | Backend Devlopment
+Cloud Engineer | AWS | DevOps | Backend Development
+
 
 
 

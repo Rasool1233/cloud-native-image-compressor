@@ -19,6 +19,7 @@ The Backend exposes a secure /optimize API endpoint, while the Frontend interact
 ---
 
 # 🌐 **Live Project URL:** [S3 Hosting](http://image-compressor-hosting.s3-website.ap-south-1.amazonaws.com)
+(Server is now paused)
 
 ---
 
